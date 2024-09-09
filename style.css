@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: lightgoldenrodyellow;
+}
+.page {
+    padding: 24px;
+}
+.title {
+    margin: 16px 0;
+}
+.page dl {
+    display: flex;
+    padding: 8px 0;
+}
+.page dt {
+    width: 150px;
+    flex-shrink: 0;
+}
+.page dt.parent {
+    padding: 8px 0;
+}
+.page dd {
+    flex-grow: 1;
+}
+.page dl + dl {
+    border-top: 1px solid #eee;
+}
+
+.user-posts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 24px;
+    padding-top: 12px;
+}
+.comments {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 24px;
+}
+.comment {
+    padding: 4px;
+    border-radius: 2px;
+    background-color: rgba(255,255,255, .7);
+
+}
+.comment p {
+    margin: 8px 0;
+}
+.comments-title {
+    margin: 36px 0 16px;
+}
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    gap: 20px;
+
+}
+.user-card {
+    width: 40%;
+    border: solid 1px saddlebrown;
+    background-color: lightyellow;
+    padding: 8px 8px;
+}
+
+.page button {
+    border: none;
+    color: #06c;
+    padding: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color .2s, padding .2s;
+}
+
+.user-posts button {
+    text-align: left;
+    font-size: 14px;
+    display: flex;
+    padding: 8px;
+    color: black;
+    background-color: papayawhip;
+    transition: background-color .2s;
+}
+
+.page button:not(.user-posts button):hover {
+    padding-left: 12px
+}
+.page .user-posts button:hover {
+    background-color: peachpuff;
+}
+
