@@ -9,7 +9,7 @@ const URI_USER_POST_COMMENTS = 'https://jsonplaceholder.typicode.com/posts/POST_
 const PATH = document.location.href;
 
 const PAGES = {
-    INDEX: 'index.html',
+    INDEX: '',
     USER: 'pages/user-details.html',
     POST: 'pages/post-details.html',
 }

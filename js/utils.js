@@ -11,7 +11,7 @@ const getUserPosts = (id) => fetch(URI_USER_POSTS.replace(USER_ID, id)).then(val
 const getUserPostsComments = (id) => fetch(URI_USER_POST_COMMENTS.replace(POST_ID, id)).then(value => value.json());
 
 const goToPage = (from, to) => {
-    document.location.href = PATH.replace(from, to);
+    document.location.href = from === '' ? `${PATH}${to}` : PATH.replace(from, to);
 }
 
 const initApp = (array) => {
