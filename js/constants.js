@@ -8,8 +8,9 @@ const URI_USER_POST_COMMENTS = 'https://jsonplaceholder.typicode.com/posts/POST_
 
 const PATH = document.location.href;
 
+// Pages INDEX for local develop is 'index.html', for GitHub is ''
 const PAGES = {
-    INDEX: '',
+    INDEX: location.origin.includes('localhost') ? 'index.html' : '',
     USER: 'pages/user-details.html',
     POST: 'pages/post-details.html',
 }
